@@ -1,0 +1,12 @@
+name: SuperRafting
+main: org.rhlug.superrafting.superrafting.SuperRafting
+version: 0.0.1
+commands:
+  checkBoat:
+    description: Check if in a boat
+    usage: /command
+    permission: SuperRafting.checkBoat
+permissions:
+  checkBoat.*:
+    description: Give access to all SuperRafting commands
+    default: true
