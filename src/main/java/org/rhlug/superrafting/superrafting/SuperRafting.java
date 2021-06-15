@@ -17,8 +17,15 @@ public class SuperRafting extends JavaPlugin{
 		//TODO Check sender is a player
 		if(cmd.getName().equalsIgnoreCase("checkBoat")) {
 			Player player = (Player) sender;
-			if(player.getVehicle()!=null) {
-				player.sendMessage("Your in a vehicle!");
+			if(player.isInsideVehicle()) {
+				switch(player.getVehicle().getType()) {
+				case BOAT:
+					player.sendMessage("You're in a boat!");
+					break;
+				default:
+					break;
+				
+				}
 			}
 			return true;
 		}
