@@ -34,7 +34,7 @@ public class SuperRafting extends JavaPlugin{
 
 		switch(e.getType()) {
 			case BOAT:
-				
+				p.sendMessage("DidHitStar boat velocity is " + e.getVelocity());
 				break;
 			default:
 				break;
