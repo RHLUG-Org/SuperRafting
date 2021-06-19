@@ -50,6 +50,7 @@ public class BoatListener implements Listener {
 				
 				if(highestBlock.getType() == Material.SOUL_LANTERN) {
 					p.sendMessage("Speed Boost Activated!");
+					p.setWalkSpeed(4);
 //					Vector currentVel = vehicleRidingIn.getVelocity(); 
 //					Vector speedBoost = currentVel.multiply(1.5)
 //					p.sendMessage("Your velocity is " + vehicleRidingIn.getVelocity().toString());
@@ -60,13 +61,8 @@ public class BoatListener implements Listener {
 						p.sendMessage("Old velocity is " + e.getVelocity() + " and new is \n" + e.getVelocity().multiply(15d));
 //						p.setVelocity(p.getVelocity().multiply(15d));
 					}
+
 				}
-				
-				//List<Entity> entities = b.getNearbyEntities(10,10,10);
-				
-				/*if(isEntityType(entities, EntityType.ARMOR_STAND)) {
-					p.sendMessage("Congratulations! You earned 100 points!");
-				}*/
 				break;
 			default:
 				break;
