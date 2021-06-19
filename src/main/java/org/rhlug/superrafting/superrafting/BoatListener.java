@@ -47,9 +47,11 @@ public class BoatListener implements Listener {
 				
 				if(highestBlock.getType() == Material.LANTERN) {
 					p.sendMessage("Speed Boost Activated!");
+					p.setWalkSpeed(4);
 //					Vector currentVel = vehicleRidingIn.getVelocity(); 
-					Vector speedBoost = new Vector(20, 20, 0);
-					vehicleRidingIn.setVelocity(speedBoost);
+					//Vector speedBoost = new Vector(20, 20, 0);
+					//vehicleRidingIn.setVelocity(speedBoost);
+					
 				}
 				
 				//List<Entity> entities = b.getNearbyEntities(10,10,10);
