@@ -22,8 +22,7 @@ public class SuperRafting extends JavaPlugin{
 	public void onEnable() {
 		getLogger().info("SuperRafting enabled!");
 		PluginManager pm = this.getServer().getPluginManager();
-		pm.registerEvents(new BoatListener(), this);
-		
+		pm.registerEvents(new BoatListener(this), this);
 	}
 	
 
